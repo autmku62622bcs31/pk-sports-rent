@@ -1,0 +1,93 @@
+/* Sidebar links */
+.logo{
+    height: 100px;
+}
+.pk{
+    background-color: black;
+}
+.nav{
+  z-index: 1;
+}
+.nav a {
+  display: block;
+  color: white;
+  padding: 16px;
+  text-decoration: none;
+}
+
+/* Active/current link */
+.nav-item a:hover {
+  background-color: grey;
+  color: white;
+}
+
+/* Links on mouse-over */
+.nav a:hover:not(.active) {
+  background-color: gray;
+  color: white;
+}
+
+.login{
+    background-color: transparent;
+    color: white;
+    border: 1px solid gray;
+    width: 240px;
+    padding: 10px;
+    border-radius: 5px;
+}
+.login:hover{
+    background-color: gray;
+}
+.box{
+    padding: 20px;
+    margin-left: 650px;
+}
+input{
+    border: 1px solid gray;
+    border-radius: 25px;
+    width: 500px;
+    background-color: #919191;
+}
+.intro-img{
+    height: 300px;
+    margin-left: 280px;
+    position: relative;
+    width: 1200px;
+    margin-bottom: 20px;
+}
+.card{
+    margin-left: 280px;
+    position: relative;
+    height: 100px;
+    width: 1200px;
+}
+.col{
+    background-color: #919191;
+}
+.content{
+    padding: 20px;
+    background-color: #3e3e3e;
+}
+.rent{
+    color: white;
+    margin-left: 280px;
+}
+
+/* On screens that are less than 700px wide, make the sidebar into a topbar */
+@media screen and (max-width: 700px) {
+  .nav {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .nav a {float: left;}
+  div.content {margin-left: 0;}
+}
+
+/* On screens that are less than 400px, display the bar vertically, instead of horizontally */
+@media screen and (max-width: 400px) {
+  .nav a {
+    text-align: center;
+    float: none;
+  }
+}

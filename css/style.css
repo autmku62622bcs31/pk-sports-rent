@@ -1,0 +1,244 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Sidebar styles */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 220px;
+    height: 100%;
+    background-color: #222;
+    color: white;
+    padding-top: 20px;
+}
+
+.sidebar .logo {
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+.sidebar a {
+    display: block;
+    padding: 12px 20px;
+    color: white;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+
+.sidebar a:hover {
+    background-color: #444;
+}
+
+/* Login button at bottom */
+.login-btn {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+    background-color: #ff6600;
+    text-align: center;
+    border-radius: 5px;
+    border: transparent;
+}
+
+.login-btn:hover {
+    background-color: #3e3e3e;
+}
+
+/* Main content */
+.main-content {
+    margin-left: 220px; /* Same as sidebar width */
+    padding: 20px;
+    min-height: 100vh;
+    background-color: #3e3e3e;
+    /* background-image: url("../img/—Pngtree—abstract\ white\ flame\ smoke\ effect_6511472.png");
+    background-repeat: no-repeat;
+    background-size:contain;
+    background-position:top; */
+}
+.searching{
+    height: 30px;
+    width: 500px;
+    position: relative;
+    left: 30%;
+    margin-bottom: 20px;
+    border-radius: 25px;
+    background-color: #919191;
+}
+.home img{
+    height: 400px;
+    width: 100%;
+}
+.card-title,.card-text{
+    position: relative;
+    top: 50px;
+    left: 50px;
+}
+.intro{
+    display: flex;
+    border: 2px solid;
+    margin-top: 20px;
+}
+.imgintro{
+    height: 400px;
+    width: 600px;
+}
+.text-card1{
+    display: flex;
+    font-size: 25px;
+    margin-top: 70px;
+    margin-left: 100px;
+}
+
+.rents{
+    border: 2px solid;
+    display: flex;
+    margin-top: 20px;
+    height: 68vh;
+}
+.rents1{
+    height: 500px;
+    width: 1000px;
+}
+.sports{
+    border: 2px solid;
+}
+.sports-head{
+    color: white;
+    margin-top: 30px;
+}
+.sports-img{
+    display: flex;
+    text-align: center;
+    margin-top: 30px;
+}
+.sports1{
+    height: 500px;
+    width: 310px;
+}
+.sports1:hover{
+    width: 315px;
+    height: 501px;
+}
+.sports2{
+    height: 500px;
+    width: 320px;
+}
+.sports3{
+    height: 500px;
+    width: 320px;
+}
+.sports4{
+    height: 500px;
+    width: 320px;
+}
+.s-name{
+    color: white;
+}
+.brands{
+    background-color: #919191;
+    height: 150px;
+    margin-top: 20px;
+}   
+.brands1-img{
+    height: 50px;
+    margin-left: 80px;
+}
+footer {
+    background-color: #919191;
+    color: white;
+    text-align: center;
+    padding: 50px;
+    margin-top: 10px; /*Push footer to bottom*/
+}
+
+footer a {
+    color: #00aced;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* @media screen and (max-width:600px) {
+    .sidebar{
+        width: 100px;
+    }
+    .login-btn{
+        width: 50px;
+    }
+} */
+ @media screen and (max-width: 600px) {
+  .sidebar {
+    width: 873px;
+    height: 80px;
+    position: static;
+.login-btn{
+    width: 50px;
+    margin-top: 31px;
+    margin-right: 70px;
+    position: relative;
+    border: transparent;
+  }
+.login-btn{float:inline-end;}
+  }
+  .sidebar a {float:inline-start;}
+  div.main-content {margin: 0;width: 873px;}
+}
+
+@media screen and (max-width: 600px){
+    .searching{
+        width: 200px;
+        position: relative;
+        bottom: 70px;       
+    }
+    .card-img-overlay{
+        width: 500px;
+    }
+        .home{
+        position: relative;
+        bottom: 40px;
+    }
+    .intro{
+        position: relative;
+        bottom: 40px;
+    }
+    .imgintro{
+        height: 300px;
+        width: 450px;
+    }
+    .text-card1{
+        font-size: 40px;
+        position: relative;
+        right: 40px;
+    }
+}
+@media screen and (max-width: 600px){
+    .sports1{
+        height: 350px;
+        width: 207px;
+    }
+    .sports2{
+        height: 350px;
+        width: 207px;
+    }
+    .sports3{
+        height: 350px;
+        width: 207px;
+    }
+    .sports4{
+        height: 350px;
+        width: 207px;
+    }
+}
