@@ -19,20 +19,22 @@ body {
     color: white;
     padding-top: 20px;
 }
-
-.sidebar .logo {
-    font-size: 20px;
+.logo img{
+    height: 90px;
+    margin-left: 40px;
+}
+/* .sidebar {
     text-align: center;
     margin-bottom: 30px;
     font-weight: bold;
-}
+} */
 
 .sidebar a {
     display: block;
-    padding: 12px 20px;
+    padding: 12px 10px;
     color: white;
     text-decoration: none;
-    transition: background 0.3s;
+    transition: background 0.1s;
 }
 
 .sidebar a:hover {
@@ -61,10 +63,10 @@ body {
     padding: 20px;
     min-height: 100vh;
     background-color: #3e3e3e;
-    /* background-image: url("../img/—Pngtree—abstract\ white\ flame\ smoke\ effect_6511472.png");
+    background-image: url("../img/—Pngtree—abstract\ white\ flame\ smoke\ effect_6511472.png");
     background-repeat: no-repeat;
     background-size:contain;
-    background-position:top; */
+    background-position:top;
 }
 .searching{
     height: 30px;
@@ -86,7 +88,7 @@ body {
 }
 .intro{
     display: flex;
-    border: 2px solid;
+    border: 1px solid rgb(156, 149, 149);
     margin-top: 20px;
 }
 .imgintro{
@@ -110,8 +112,8 @@ body {
     height: 500px;
     width: 1000px;
 }
-.sports{
-    border: 2px solid;
+.s-name{
+    font-size: medium;
 }
 .sports-head{
     color: white;
@@ -147,13 +149,56 @@ body {
 }
 .brands{
     background-color: #919191;
-    height: 150px;
+    height: 100px;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
     margin-top: 20px;
 }   
 .brands1-img{
-    height: 50px;
-    margin-left: 80px;
+    height: 40px;
+    margin-left: 30px;
 }
+.brands2-img{
+    height: 80px;
+}
+marquee{
+    box-shadow: 0 1px 3px rgba(0,0,0,0.10);
+    padding: 10px;
+}
+.brands1{
+    margin-top: 25px;
+    margin-right: 20px;
+    font-style: oblique;
+    font-weight: bold;
+}
+/* .brands-wrapper:after, .brands-wrapper:before{
+    content: "";
+    position: absolute;
+    height: 130px;
+    width: 150px;
+    z-index: 2;
+}
+.brands-wrapper:after{
+    right: 0;
+    top: 0;
+    transform: rotate(180deg);
+}
+.brands-wrapper:before{
+    right: 0;
+    top: 0;
+}
+.brands-wrapper .brands-track{
+    display: flex;
+    width: calc(150px * 10);
+}
+.brands-wrapper .brands1-img{
+    width: 150px;
+}
+.brands-wrapper .brands1-img img{
+    height: 90px;
+} */
+
 footer {
     background-color: #919191;
     color: white;
@@ -181,64 +226,86 @@ footer a:hover {
 } */
  @media screen and (max-width: 600px) {
   .sidebar {
-    width: 873px;
-    height: 80px;
+    width: 600px;
+    height: 50px;
     position: static;
-.login-btn{
+  }
+  .sidebar a{
+    position: relative;
+    bottom: 20px;
+    right: 30px;
+  }
+  .logo img{
+        height: 30px;
+        position: relative;
+    }
+  .login-btn{
     width: 50px;
-    margin-top: 31px;
-    margin-right: 70px;
+    margin-top: 10px;
+    margin-right: 42px;
     position: relative;
     border: transparent;
   }
-.login-btn{float:inline-end;}
-  }
+  .login-btn{float:inline-end;}
   .sidebar a {float:inline-start;}
-  div.main-content {margin: 0;width: 873px;}
+  div.main-content {margin: 0;width: 603px;}
 }
 
 @media screen and (max-width: 600px){
     .searching{
         width: 200px;
         position: relative;
-        bottom: 70px;       
+        bottom: 60px;  
+        height: 25px;    
     }
     .card-img-overlay{
-        width: 500px;
+        width: 300px;
     }
-        .home{
+    .home{
         position: relative;
         bottom: 40px;
+    }
+    .home img{
+        height: 300px;
     }
     .intro{
         position: relative;
         bottom: 40px;
     }
     .imgintro{
-        height: 300px;
-        width: 450px;
+        height: 200px;
+        width: 300px;
     }
     .text-card1{
         font-size: 40px;
         position: relative;
-        right: 40px;
+        right: 60px;
     }
 }
 @media screen and (max-width: 600px){
+    .sports-head{
+        font-size: larger;
+    }
     .sports1{
-        height: 350px;
-        width: 207px;
+        height: 200px;
+        width: 140px;
     }
     .sports2{
-        height: 350px;
-        width: 207px;
+        height: 200px;
+        width: 140px;
     }
     .sports3{
-        height: 350px;
-        width: 207px;
+        height: 200px;
+        width: 140px;
     }
     .sports4{
-        height: 350px;
-        width: 207px;
+        height: 200px;
+        width: 140px;
     }
+    .brands1-img{
+        height: 40px;
+    }
+    .brands2-img{
+    height: 60px;
+}
 }
