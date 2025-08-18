@@ -172,32 +172,7 @@ marquee{
     font-style: oblique;
     font-weight: bold;
 }
-/* .brands-wrapper:after, .brands-wrapper:before{
-    content: "";
-    position: absolute;
-    height: 130px;
-    width: 150px;
-    z-index: 2;
-}
-.brands-wrapper:after{
-    right: 0;
-    top: 0;
-    transform: rotate(180deg);
-}
-.brands-wrapper:before{
-    right: 0;
-    top: 0;
-}
-.brands-wrapper .brands-track{
-    display: flex;
-    width: calc(150px * 10);
-}
-.brands-wrapper .brands1-img{
-    width: 150px;
-}
-.brands-wrapper .brands1-img img{
-    height: 90px;
-} */
+
 
 footer {
     background-color: #919191;
@@ -216,14 +191,8 @@ footer a:hover {
     text-decoration: underline;
 }
 
-/* @media screen and (max-width:600px) {
-    .sidebar{
-        width: 100px;
-    }
-    .login-btn{
-        width: 50px;
-    }
-} */
+
+
  @media screen and (max-width: 600px) {
   .sidebar {
     width: 600px;
@@ -286,21 +255,123 @@ footer a:hover {
     .sports-head{
         font-size: larger;
     }
+    .sports-img1{
+        display:inline-block;
+    }
     .sports1{
-        height: 200px;
+        height: 250px;
         width: 140px;
     }
     .sports2{
-        height: 200px;
+        height: 250px;
         width: 140px;
     }
     .sports3{
-        height: 200px;
+        height: 250px;
         width: 140px;
     }
     .sports4{
-        height: 200px;
+        height: 250px;
         width: 140px;
+    }
+    .brands1-img{
+        height: 40px;
+    }
+    .brands2-img{
+    height: 60px;
+}
+}
+
+
+@media screen and (max-width: 400px) {
+  .sidebar {
+    width: 400px;
+    height: 50px;
+    position: static;
+  }
+  .sidebar a{
+    position: relative;
+    bottom: 20px;
+    right: 40px;
+  }
+  .logo img{
+        height: 30px;
+        position: relative;
+    }
+  .login-btn{
+    width: 50px;
+    margin-top: 10px;
+    margin-right: 42px;
+    position: relative;
+    border: transparent;
+  }
+  .login-btn{float:inline-end;}
+  .sidebar a {float:inline-start;}
+  div.main-content {margin: 0;width: 400px;}
+}
+
+@media screen and (max-width: 400px){
+    .searching{
+        width: 100px;
+        position: relative;
+        bottom: 60px;  
+        height: 25px;    
+    }
+    .card-img-overlay{
+        width: 200px;
+    }
+    .home{
+        position: relative;
+        bottom: 40px;
+    }
+    .home img{
+        height: 230px;
+    }
+    .intro{
+        position: relative;
+        bottom: 40px;
+    }
+    .imgintro{
+        height: 200px;
+        width: 358px;
+    }
+    .text-card1{
+        font-size: 40px;
+        position: relative;
+        right: 35px;
+    }
+}
+@media screen and (max-width: 400px){
+    .sports-head{
+        font-size:x-large;
+    }
+    .sports{
+        position: relative;
+        bottom: 45px;
+    }
+        .sports-img{
+        display:inline;
+    }
+    .sports1{
+        height: 400px;
+        width: 360px;
+    }
+    .sports2{
+        height: 400px;
+        width: 360px;
+    }
+    .sports3{
+        height: 400px;
+        width: 360px;
+    }
+    .sports4{
+        height: 400px;
+        width: 360px;
+    }
+    .brands1{
+        position: relative;
+        top: 10px;
+        font-size: 25px;
     }
     .brands1-img{
         height: 40px;
