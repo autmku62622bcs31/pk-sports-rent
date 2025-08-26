@@ -31,7 +31,7 @@ body {
 
 .sidebar a {
     display: block;
-    padding: 12px 10px;
+    padding: 12px 20px;
     color: white;
     text-decoration: none;
     transition: background 0.1s;
@@ -191,7 +191,285 @@ footer a:hover {
     text-decoration: underline;
 }
 
+/*screen 1400px*/
+@media screen and (max-width: 1400px) {
+    .searching{
+        position: relative;
+        left: 320px;
+    }
+    .sports-img{
+        position: relative;
+        bottom: 10px;
+    }
+    .sports1{
+        height: 460px;
+        width: 284px;
+    }
+    .sports2{
+        height: 460px;
+        width: 284px;
+    }
+    .sports3{
+        height: 460px;
+        width: 284px;
+    }
+    .sports4{
+        height: 460px;
+        width: 284px;
+    }
+    .brands1{
+        position: relative;
+        bottom: 10px;
+        font-size: 25px;
+    }
+    .brands1-img{
+        height: 40px;
+    }
+    .brands2-img{
+    height: 60px;
+}
+}
 
+/*screen 1200px*/
+@media screen and (max-width: 1200px) {
+    .searching{
+        position: relative;
+        left: 220px;
+    }
+    .sports-img{
+        position: relative;
+        bottom: 10px;
+    }
+    .sports1{
+        height: 400px;
+        width: 235px;
+    }
+    .sports2{
+        height: 400px;
+        width: 235px;
+    }
+    .sports3{
+        height: 400px;
+        width: 235px;
+    }
+    .sports4{
+        height: 400px;
+        width: 235px;
+    }
+    .brands1{
+        position: relative;
+        bottom: 10px;
+        font-size: 25px;
+    }
+    .brands1-img{
+        height: 40px;
+    }
+    .brands2-img{
+    height: 60px;
+}
+}
+
+/*1000px screen*/
+@media screen and (max-width: 1000px) {
+  .sidebar {
+    width: 1000px;
+    height: 50px;
+    position: static;
+  }
+  .sidebar a{
+    position: relative;
+    bottom: 20px;
+    left: 20px;
+  }
+  .logo img{
+        height: 30px;
+        position: relative;
+        right: 20px;
+    }
+  .login-btn{
+    height: 25px;
+    width: 100px;
+    border-radius: 20px;
+    margin-top: 12px;
+    margin-right: 52px;
+    position: relative;
+    border: transparent;
+  }
+  .login-btn{float:inline-end;}
+  .sidebar a {float:inline-start;}
+  div.main-content {margin: 0;width: 1000px;}
+}
+@media screen and (max-width: 1000px){
+    .searching{
+        width: 400px;
+        position: relative;
+        bottom: 60px;  
+        height: 25px;   
+        left: 250px; 
+    }
+    .card-img-overlay{
+        width: 400px;
+    }
+    .home{
+        position: relative;
+        bottom: 40px;
+    }
+    .home img{
+        height: 400px;
+    }
+    .intro{
+        position: relative;
+        bottom: 40px;
+    }
+    .imgintro{
+        height: 400px;
+        width: 600px;
+    }
+    .text-card1{
+        font-size: 40px;
+        position: relative;
+        right: 35px;
+    }
+}
+@media screen and (max-width: 1000px){
+    .sports-head{
+        font-size:x-large;
+    }
+    .sports-img{
+        position: relative;
+        bottom: 10px;
+    }
+    .sports{
+        position: relative;
+        bottom: 40px;
+    }
+    .sports1{
+        height: 350px;
+        width: 240px;
+    }
+    .sports2{
+        height: 350px;
+        width: 240px;
+    }
+    .sports3{
+        height: 350px;
+        width: 240px;
+    }
+    .sports4{
+        height: 350px;
+        width: 240px;
+    }
+    .brands1{
+        position: relative;
+        bottom: 10px;
+        font-size: 25px;
+    }
+    .brands1-img{
+        height: 40px;
+    }
+    .brands2-img{
+    height: 60px;
+}
+}
+
+
+/*800px screen*/
+@media screen and (max-width: 800px) {
+  .sidebar {
+    width: 800px;
+    height: 50px;
+    position: static;
+  }
+  .sidebar a{
+    position: relative;
+    bottom: 20px;
+  }
+  .logo img{
+        height: 30px;
+        position: relative;
+    }
+  .login-btn{
+    width: 50px;
+    margin-top: 10px;
+    margin-right: 42px;
+    position: relative;
+    border: transparent;
+  }
+  .login-btn{float:inline-end;}
+  .sidebar a {float:inline-start;}
+  div.main-content {margin: 0;width: 800px;}
+}
+@media screen and (max-width: 800px){
+    .searching{
+        width: 300px;
+        position: relative;
+        bottom: 60px;  
+        height: 25px;    
+    }
+    .card-img-overlay{
+        width: 400px;
+    }
+    .home{
+        position: relative;
+        bottom: 40px;
+    }
+    .home img{
+        height: 300px;
+    }
+    .intro{
+        position: relative;
+        bottom: 40px;
+    }
+    .imgintro{
+        height: 280px;
+        width: 450px;
+    }
+    .text-card1{
+        font-size: 40px;
+        position: relative;
+        right: 35px;
+    }
+}
+@media screen and (max-width: 800px){
+    .sports-head{
+        font-size:x-large;
+    }
+    .sports-img{
+        position: relative;
+        bottom: 10px;
+    }
+    .sports{
+        position: relative;
+        bottom: 40px;
+    }
+    .sports1{
+        height: 350px;
+        width: 190px;
+    }
+    .sports2{
+        height: 350px;
+        width: 190px;
+    }
+    .sports3{
+        height: 350px;
+        width: 190px;
+    }
+    .sports4{
+        height: 350px;
+        width: 190px;
+    }
+    .brands1{
+        position: relative;
+        bottom: 10px;
+        font-size: 25px;
+    }
+    .brands1-img{
+        height: 40px;
+    }
+    .brands2-img{
+    height: 60px;
+}
+}
 
  @media screen and (max-width: 600px) {
   .sidebar {
@@ -220,6 +498,7 @@ footer a:hover {
   div.main-content {margin: 0;width: 603px;}
 }
 
+/*600 px screen*/
 @media screen and (max-width: 600px){
     .searching{
         width: 200px;
@@ -242,8 +521,8 @@ footer a:hover {
         bottom: 40px;
     }
     .imgintro{
-        height: 200px;
-        width: 300px;
+        height: 250px;
+        width: 350px;
     }
     .text-card1{
         font-size: 40px;
@@ -252,8 +531,16 @@ footer a:hover {
     }
 }
 @media screen and (max-width: 600px){
+    .sports{
+        position: relative;
+        bottom: 40px;
+    }
     .sports-head{
         font-size: larger;
+    }
+    .sports-img{
+        position: relative;
+        bottom: 20px;
     }
     .sports-img1{
         display:inline-block;
@@ -274,15 +561,24 @@ footer a:hover {
         height: 250px;
         width: 140px;
     }
+    .brands{
+        position: relative;
+        bottom: 40px;
+    }
     .brands1-img{
         height: 40px;
     }
     .brands2-img{
     height: 60px;
 }
+footer{
+    position: relative;
+    bottom: 40px;
+}
 }
 
 
+/*400px screen*/
 @media screen and (max-width: 400px) {
   .sidebar {
     width: 400px;
@@ -309,7 +605,6 @@ footer a:hover {
   .sidebar a {float:inline-start;}
   div.main-content {margin: 0;width: 400px;}
 }
-
 @media screen and (max-width: 400px){
     .searching{
         width: 100px;
@@ -325,14 +620,14 @@ footer a:hover {
         bottom: 40px;
     }
     .home img{
-        height: 230px;
+        height: 220px;
     }
     .intro{
         position: relative;
         bottom: 40px;
     }
     .imgintro{
-        height: 200px;
+        height: 250px;
         width: 358px;
     }
     .text-card1{
@@ -380,3 +675,5 @@ footer a:hover {
     height: 60px;
 }
 }
+
+

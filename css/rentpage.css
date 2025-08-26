@@ -26,7 +26,7 @@ body {
 
 .sidebar a {
     display: block;
-    padding: 12px 10px;
+    padding: 12px 20px;
     color: white;
     text-decoration: none;
     transition: background 0.1s;
@@ -46,6 +46,7 @@ body {
     text-align: center;
     border-radius: 5px;
     border: transparent;
+    padding: 12px;
 }
 
 .login-btn:hover {
@@ -64,6 +65,117 @@ body {
 .heading{
     color: white;
 }
+
+
+/*screen 1000px*/
+ @media screen and (max-width: 1000px) {
+  .sidebar {
+    width: 1000px;
+    height: 60px;
+    position: static;
+  }
+  .logo img{
+    height: 50px;
+    position: relative;
+    bottom: 10px;
+  }
+  .sidebar a{
+    position: relative;
+    bottom: 80px;
+    left: 100px;
+  }
+  .login-btn{
+    width: 100px;
+    padding: 5px;
+    border-radius: 20px;
+    bottom: 70px;
+    margin-right: 52px;
+    position: relative;
+    border: transparent;
+  }
+  .heading{
+    font-weight: bolder;
+    position: relative;
+    right: 140px;
+  }
+  .row{
+    width: 980px;
+  }
+  .col{
+    height: 350px;
+  }
+  .card img{
+    height: 200px;
+    width: 200px;
+    padding-left: 15px;
+  }
+  .main-content{
+    background-image: url("../img/—Pngtree—abstract\ white\ flame\ smoke\ effect_6511472.png");
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position:left;
+}
+  .login-btn{float:inline-end;}
+  .sidebar a {float:inline-start;}
+  div.main-content {margin: 0;width: 1000px;}
+}
+
+
+/*screen 800px*/
+ @media screen and (max-width: 800px) {
+  .sidebar {
+    width: 800px;
+    height: 50px;
+    position: static;
+  }
+  .sidebar a{
+    position: relative;
+    bottom: 80px;
+    left: 100px;
+  }
+    .logo img{
+    height: 40px;
+    position: relative;
+    bottom: 15px;
+  }
+    .heading{
+    font-weight: bolder;
+    position: relative;
+    right: 140px;
+  }
+    .row{
+    width: 780px;
+  }
+  .col{
+    height: 350px;
+  }
+  .card img{
+    height: 200px;
+    width: 200px;
+    padding-left: 15px;
+  }
+    .main-content{
+    background-image: url("../img/—Pngtree—abstract\ white\ flame\ smoke\ effect_6511472.png");
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position:left;
+  }
+  .login-btn{
+    width: 80px;
+    padding: 2px;
+    border-radius: 20px;
+    bottom: 65px;
+    margin-right: 52px;
+    position: relative;
+    border: transparent;
+  }
+  .login-btn{float:inline-end;}
+  .sidebar a {float:inline-start;}
+  div.main-content {margin: 0;width: 803px;}
+}
+
+
+/*screen 600px*/
  @media screen and (max-width: 600px) {
   .sidebar {
     width: 600px;
@@ -72,21 +184,99 @@ body {
   }
   .sidebar a{
     position: relative;
-    bottom: 20px;
-    right: 30px;
+    bottom: 70px;
+    left: 100px;
+  }
+    .logo img{
+    height: 50px;
+    position: relative;
+    bottom: 10px;
+  }
+      .row{
+    width: 580px;
+  }
+  .col{
+    height: 350px;
+  }
+  .card img{
+    height: 200px;
+    width: 200px;
+    padding-left: 15px;
+  }
+    .main-content{
+    background-image: url("../img/—Pngtree—abstract\ white\ flame\ smoke\ effect_6511472.png");
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position:left;
   }
   .logo img{
         height: 30px;
         position: relative;
     }
   .login-btn{
-    width: 50px;
-    margin-top: 10px;
-    margin-right: 42px;
+    width: 80px;
+    padding: 2px;
+    border-radius: 20px;
+    bottom: 59px;
+    margin-right: 52px;
     position: relative;
     border: transparent;
   }
   .login-btn{float:inline-end;}
   .sidebar a {float:inline-start;}
   div.main-content {margin: 0;width: 603px;}
+}
+
+/*screen 400px*/
+@media screen and (max-width: 400px) {
+  .sidebar {
+    width: 400px;
+    height: 50px;
+    position: static;
+  }
+    .sidebar a{
+    position: relative;
+    bottom: 70px;
+    left: 50px;
+  }
+  .heading{
+    font-weight: bolder;
+    position: relative;
+    right: 140px;
+  }
+ 
+  .row{
+    width: 380px;
+  }
+  .col{
+    height: 350px;
+  }
+  .card img{
+    height: 200px;
+    width: 200px;
+    padding-left: 15px;
+  }
+  .main-content{
+    background-image: url("../img/—Pngtree—abstract\ white\ flame\ smoke\ effect_6511472.png");
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position:left;
+  }
+  .logo img{
+        height: 30px;
+        position: relative;
+        right: 20px;
+    }
+  .login-btn{
+    width: 60px;
+    padding: 3px;
+    border-radius: 20px;
+    bottom: 59px;
+    margin-right: 40px;
+    position: relative;
+    border: transparent;
+  }
+  .login-btn{float:inline-end;}
+  .sidebar a {float:inline-start;}
+  div.main-content {margin: 0;width: 400px;}
 }

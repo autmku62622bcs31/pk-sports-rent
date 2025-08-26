@@ -99,8 +99,20 @@ label{
 }
 .tol-head{
     color: white;
-    margin-top: 20px;
+    margin-top: 30px;
 }
+.tol-head,#amount{
+    display: flex;
+}
+#amount{
+    position: relative;
+    left: 10px;
+}
+input{
+    text-align: center;
+    font-weight: bold;
+}
+
 .book-btn{
     border: transparent;
     font-size: 20px;
@@ -117,4 +129,38 @@ label{
 input{
     font-weight: bolder;
     color: white;
+}
+
+/*screen 400px*/
+@media screen and (max-width: 400px) {
+  .sidebar {
+    width: 400px;
+    height: 50px;
+    position: static;
+  }
+    .main-content{
+    background-image: url("../img/—Pngtree—abstract\ white\ flame\ smoke\ effect_6511472.png");
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position:left;
+  }
+  .sidebar a{
+    position: relative;
+    bottom: 20px;
+    left: 40px;
+  }
+  .logo img{
+        height: 30px;
+        position: relative;
+    }
+  .login-btn{
+    width: 50px;
+    margin-top: 10px;
+    margin-right: 42px;
+    position: relative;
+    border: transparent;
+  }
+  .login-btn{float:inline-end;}
+  .sidebar a {float:inline-start;}
+  div.main-content {margin: 0;width: 400px;}
 }
