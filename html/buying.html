@@ -27,12 +27,29 @@
     <img class="pro-image" src="../img/cricket/mrfbat-removebg-preview.png" alt="">
 </div>
     <div class="buying-btn">
-    <input class="str-btn" type="date"></input><br><br>
-    <input class="end-btn" type="date"></input><br><br>
-    <input class="tot-btn" placeholder="Total days"></input>
+    <input class="str-btn" id="change" onclick="changeme()" type="date" required autofocus></input><br><br>
+    <input class="end-btn" id="change" onclick="changeme()" type="date"></input><br><br>
+    <input class="tot-btn" id="change" onclick="changeme()" placeholder="Total days"></input>
     <button class="book-btn">Book Now</button>
     </div>
 </div>
 </div>
 </body>
+<script> 
+function changeme() {
+        // document.getElementById("change").style.backgroundColor = "blue";
+          const change = document.getElementById('change');
+
+  // Add event listener for when the input gains focus
+  change.addEventListener('focus', function() {
+    change.style.backgroundColor = 'grey';
+    change.style.borderColor = 'blue';
+  });
+
+  // Add event listener for when the input loses focus
+  change.addEventListener('blur', function() {
+    change.style.backgroundColor = 'transparent';
+    change.style.borderColor = '#ccc';
+  });
+        } </script>
 </html>
