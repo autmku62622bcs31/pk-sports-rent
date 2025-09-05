@@ -51,6 +51,7 @@ body {
     text-align: center;
     border-radius: 5px;
     border: transparent;
+    padding: 12px;
 }
 
 .login-btn:hover {
