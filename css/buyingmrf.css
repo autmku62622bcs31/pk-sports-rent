@@ -64,44 +64,43 @@ body {
     background-position:left;
 }
 .buying-page{
-    height: 500px;
-    width: 1000px;
+    height: 650px;
+    width: 1100px;
+    margin-left: 100px;
+    margin-top: 20px;
     background-color: gray;
-    margin-left: 80px;
-    margin-top: 90px;
 }
-/* .buying-img{
+.buying-btn{
+    margin-top: 120px;
+    margin-left: 200px;
+}
+.buying-img{
+    margin-left: 50px;
+    padding-top: 30px;
+}
+.buy{
     display: flex;
-} */
+}
 .buying-text{
     /* position: relative;
     left: 250px;
     top: 80px; */
     color: white;
     font-weight: bolder;
-    font-size: 30px;
+    font-size: 30px;  
 }
-.pro-image{
-    height: 400px;
-    width: 230px;
-    margin-left: 70px;
-    margin-top: 100px;
-    
+.buying-text h4{
+  margin-top: 200px;
+}
+.pro-img img{
+    height: 350px;
+    width: 200px;
+    margin-left: 100px;
+    margin-top: 80px;
+}
     /* position: absolute;
     top: 300px;
     left: 430px; */
-}
-.buying-page{
-    position: absolute;
-    bottom: 170px;
-    left: 300px;
-}
-.buying-btn{
-  max-width: 500px;
-  margin-left: 500px;
-  position: relative;
-  bottom: 350px;
-}
 .buying-btn input{
     text-align: center;
     font-weight: bold;
