@@ -1,0 +1,573 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Sidebar styles */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 220px;
+    height: 100%;
+    background-color: #222;
+    color: white;
+    padding-top: 20px;
+}
+
+.logo img{
+    height: 90px;
+    margin-left: 40px;
+}
+
+.sidebar a {
+    display: block;
+    padding: 12px 20px;
+    color: white;
+    text-decoration: none;
+    transition: background 0.1s;
+}
+
+.sidebar a:hover {
+    background-color: #444;
+}
+
+/* Login button at bottom */
+.login-btn {
+    height: 45px;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+    background-color: #ff6600;
+    text-align: center;
+    border-radius: 5px;
+    border: transparent;
+}
+
+.login-btn:hover {
+    background-color: #3e3e3e;
+}
+.main-content {
+    margin-left: 220px; /* Same as sidebar width */
+    padding: 20px;
+    min-height: 100vh;
+    background-color: #3e3e3e;
+    background-image: url("../img/—Pngtree—abstract\ white\ flame\ smoke\ effect_6511472.png");
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position:left;
+}
+.buying-page{
+    height: 500px;
+    width: 1000px;
+    background-color: gray;
+    margin-left: 80px;
+    margin-top: 90px;
+}
+/* .buying-img{
+    display: flex;
+} */
+.buying-text{
+    /* position: relative;
+    left: 250px;
+    top: 80px; */
+    color: white;
+    font-weight: bolder;
+    font-size: 30px;
+}
+.pro-image{
+    height: 400px;
+    width: 230px;
+    margin-left: 70px;
+    margin-top: 100px;
+    
+    /* position: absolute;
+    top: 300px;
+    left: 430px; */
+}
+.buying-page{
+    position: absolute;
+    bottom: 170px;
+    left: 300px;
+}
+.buying-btn{
+  max-width: 500px;
+  margin-left: 500px;
+  position: relative;
+  bottom: 350px;
+}
+.buying-btn input{
+    text-align: center;
+    font-weight: bold;
+}
+.str-btn{
+    height: 40px;
+    width: 450px;
+    border-radius: 20px;
+    font-weight: light;
+    font-size: 20px;
+    background-color:transparent;
+    border:0.1px solid;
+    color: white;
+}
+.str-btn::placeholder{
+    text-align: center;
+    font-weight: bold;
+}
+.end-btn{
+    height: 40px;
+    width: 450px;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 20px;
+    background-color:transparent;
+    border:0.1px solid;
+    color: white;
+}
+.tot-btn{
+    height: 40px;
+    width: 450px;
+    border-radius: 20px;
+    font-weight: light;
+    font-size: 20px;
+    background-color:transparent;
+    border:0.1px solid;
+    color: white;
+}
+.tot-btn::placeholder{
+    text-align: center;
+    font-weight: bold;
+}
+.book-btn{
+    height: 40px;
+    width: 250px;
+    margin-left: 110px;
+    margin-top: 25px;
+    border: 1px transparent;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 20px;
+}
+/* .input[type=date]:focus{
+  background-color: aqua;
+  border-color: red;
+  outline: none;
+} */
+
+/*screen 1200*/
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 220px;
+    height: 100%;
+    background-color: #222;
+    color: white;
+    padding-top: 20px;
+}
+
+
+
+/*screen 1000px*/
+ @media screen and (max-width: 1000px) {
+  .sidebar {
+    width: 1000px;
+    height: 60px;
+    position: static;
+  }
+  .logo img{
+    height: 50px;
+    position: relative;
+    bottom: 10px;
+  }
+  .sidebar a{
+    position: relative;
+    bottom: 80px;
+    left: 100px;
+  }
+  .login-btn{
+    height: 35px;
+    width: 120px;
+    border-radius: 20px;
+    bottom: 68px;
+    margin-right: 40px;
+    position: relative;
+    border: transparent;
+  }
+    .main-content{
+    background-image: url("../img/—Pngtree—abstract\ white\ flame\ smoke\ effect_6511472.png");
+    background-repeat: no-repeat;
+    background-size:cover;
+    /* background-position:left; */
+    background-position-x:300px;
+}
+.pro-image{
+    position: absolute;
+    right: 680px;
+    bottom: 1220px;
+    height: 420px;
+  }
+  .buying-btn{
+    position: relative;
+    right: 700px;
+    bottom: 750px;
+  }
+  .buying-text{ 
+    color: white;
+    font-weight: bolder;
+    font-size: 32px;
+    position: relative;
+    bottom: 1250px;
+    right: 120px;
+}
+.str-btn{
+    height: 50px;
+    width: 620px;
+    border: 1px transparent;
+    border-radius: 25px;
+    font-weight: light;
+    font-size: 18px;
+    position: relative;
+    left: 90px;
+    border:0.1px solid;
+}
+.end-btn{
+    height: 50px;
+    width: 620px;
+    border: 1px transparent;
+    border-radius: 25px;
+    font-weight: light;
+    font-size: 18px;
+    position: relative;
+    left: 90px;
+    border:0.1px solid;
+}
+.tot-btn{
+    height: 50px;
+    width: 620px;
+    border: 1px transparent;
+    border-radius: 25px;
+    font-weight: light;
+    font-size: 18px;
+    position: relative;
+    left: 90px;
+    border:0.1px solid;
+}
+.book-btn{
+    height: 50px;
+    width: 350px;
+    border: 1px transparent;
+    border-radius: 25px;
+    font-weight: light;
+    font-size: 15px;
+    position: relative;
+    left: 120px;
+}
+  .login-btn{float:inline-end;}
+  .sidebar a {float:inline-start;}
+  div.main-content {margin: 0;width: 1000px;}
+}
+
+/*screen 800px*/
+ @media screen and (max-width: 800px) {
+  .sidebar {
+    width: 800px;
+    height: 50px;
+    position: static;
+  }
+  .sidebar a{
+    position: relative;
+    bottom: 80px;
+    left: 100px;
+  }
+    .logo img{
+    height: 40px;
+    position: relative;
+    bottom: 15px;
+  }
+  .main-content{
+    background-image: url("../img/—Pngtree—abstract\ white\ flame\ smoke\ effect_6511472.png");
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position-x:100px;
+  }
+  .login-btn{
+    height: 35px;
+    width: 100px;
+    border-radius: 20px;
+    bottom: 68px;
+    margin-right: 40px;
+    position: relative;
+    border: transparent;
+  }
+  .pro-image{
+    position: absolute;
+    right: 780px;
+    bottom: 1250px;
+    height: 400px;
+  }
+  .buying-btn{
+    position: relative;
+    right: 750px;
+    bottom: 800px;
+  }
+  .buying-text{
+    color: white;
+    font-weight: bolder;
+    font-size: 30px;
+    position: relative;
+    bottom: 1250px;
+    right: 200px;
+}
+.str-btn{
+    height: 40px;
+    width: 520px;
+    border: 1px transparent;
+    border-radius: 20px;
+    font-weight: light;
+    font-size: 15px;
+    position: relative;
+    left: 90px;
+    border:0.1px solid;
+}
+.end-btn{
+    height: 40px;
+    width: 520px;
+    border: 1px transparent;
+    border-radius: 20px;
+    font-weight: light;
+    font-size: 18px;
+    position: relative;
+    left: 90px;
+    border:0.1px solid;
+}
+.tot-btn{
+    height: 40px;
+    width: 520px;
+    border: 1px transparent;
+    border-radius: 20px;
+    font-weight: light;
+    font-size: 15px;
+    position: relative;
+    left: 90px;
+    border:0.1px solid;
+}
+.book-btn{
+    height: 40px;
+    width: 250px;
+    border: 1px transparent;
+    border-radius: 20px;
+    font-weight: light;
+    font-size: 15px;
+    position: relative;
+    left: 100px;
+}
+  .login-btn{float:inline-end;}
+  .sidebar a {float:inline-start;}
+  div.main-content {margin: 0; width: 800px;}
+}
+
+/*screen 600px*/
+ @media screen and (max-width: 600px) {
+  .sidebar {
+    width: 600px;
+    height: 50px;
+    position: static;
+  }
+  .sidebar a{
+    position: relative;
+    bottom: 66px;
+    left: 100px;
+  }
+    .logo img{
+    height: 50px;
+    position: relative;
+    bottom: 10px;
+  }
+    .main-content{
+    background-image: url("../img/—Pngtree—abstract\ white\ flame\ smoke\ effect_6511472.png");
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position:left;
+  }
+  .logo img{
+        height: 30px;
+        position: relative;
+    }
+  .login-btn{
+    height: 30px;
+    width: 90px;
+    border-radius: 20px;
+    bottom: 55px;
+    margin-right: 40px;
+    position: relative;
+    border: transparent;
+  }
+    .pro-image{
+    position: absolute;
+    right: 880px;
+    bottom: 1300px;
+    height: 350px;
+  }
+  .buying-btn{
+    position: relative;
+    right: 800px;
+    bottom: 800px;
+  }
+  .buying-text{
+    color: white;
+    font-weight: bolder;
+    font-size: 25px;
+    position: relative;
+    bottom: 1250px;
+    right: 250px;
+}
+.str-btn{
+    height: 40px;
+    width: 420px;
+    border: 1px transparent;
+    border-radius: 20px;
+    font-weight: light;
+    font-size: 15px;
+    position: relative;
+    left: 100px;
+    border:0.1px solid;
+}
+.end-btn{
+    height: 40px;
+    width: 420px;
+    border: 1px transparent;
+    border-radius: 20px;
+    font-weight: light;
+    font-size: 18px;
+    position: relative;
+    left: 100px;
+    border:0.1px solid;
+}
+.tot-btn{
+    height: 40px;
+    width: 420px;
+    border: 1px transparent;
+    border-radius: 20px;
+    font-weight: light;
+    font-size: 15px;
+    position: relative;
+    left: 100px;
+    border:0.1px solid;
+}
+.book-btn{
+    height: 40px;
+    width: 250px;
+    border: 1px transparent;
+    border-radius: 20px;
+    font-weight: light;
+    font-size: 15px;
+    position: relative;
+    left: 70px;
+}
+  .login-btn{float:inline-end;}
+  .sidebar a {float:inline-start;}
+  div.main-content {margin: 0;width: 600px;}
+}
+
+/*screen 400px*/
+@media screen and (max-width: 400px) {
+  .sidebar {
+    width: 400px;
+    height: 50px;
+    position: static;
+  }
+    .sidebar a{
+    position: relative;
+    bottom: 70px;
+    left: 50px;
+  }
+    .main-content{
+    background-image: url("../img/—Pngtree—abstract\ white\ flame\ smoke\ effect_6511472.png");
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position:left;
+  }
+    .logo img{
+        height: 35px;
+        position: relative;
+        right: 30px;
+        bottom: 10px;
+    }
+  .login-btn{
+    height: 30px;
+    width: 80px;
+    border-radius: 20px;
+    bottom: 60px;
+    margin-right: 40px;
+    position: relative;
+    border: transparent;
+  }
+  .pro-image{
+    position: absolute;
+    right: 1000px;
+    bottom: 1300px;
+    height: 350px;
+  }
+  .buying-btn{
+    position: relative;
+    right: 800px;
+    bottom: 800px;
+  }
+  .buying-text{
+    color: white;
+    font-weight: bolder;
+    font-size: 20px;
+    position: relative;
+    bottom: 1250px;
+    right: 280px;
+}
+.str-btn{
+    height: 35px;
+    width: 300px;
+    border-radius: 20px;
+    font-weight: light;
+    font-size: 15px;
+    position: relative;
+    left: 50px;
+    border:0.1px solid;
+}
+.end-btn{
+    height: 35px;
+    width: 300px;
+    border-radius: 20px;
+    font-weight: light;
+    font-size: 15px;
+    position: relative;
+    left: 50px;
+    border:0.1px solid;
+}
+.tot-btn{
+    height: 35px;
+    width: 300px;
+    border-radius: 20px;
+    font-weight: light;
+    font-size: 15px;
+    position: relative;
+    left: 50px;
+    border:0.1px solid;
+}
+.book-btn{
+    height: 35px;
+    width: 150px;
+    border-radius: 20px;
+    font-weight: light;
+    font-size: 15px;
+    position: relative;
+    left:15px;
+}
+  .login-btn{float:inline-end;}
+  .sidebar a {float:inline-start;}
+  div.main-content {margin: 0;width: 400px;}
+}
