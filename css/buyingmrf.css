@@ -142,6 +142,7 @@ body {
 .tot-btn::placeholder{
     text-align: center;
     font-weight: bold;
+    color: white;
 }
 .book-btn{
     height: 40px;

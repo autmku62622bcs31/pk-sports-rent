@@ -64,10 +64,11 @@ body {
     background-position:left;
 }
 .buying-page{
-    height: 500px;
-    width: 1000px;
-    /* margin-left: 80px;
-    margin-top: 90px; */
+    height: 650px;
+    width: 1100px;
+    margin-left: 100px;
+    margin-top: 20px;
+    background-color: gray;
 }
 /* .buying-img{
     display: flex;
