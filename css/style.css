@@ -48,7 +48,6 @@ body {
     left: 20px;
     right: 20px;
     background-color: #ff6600;
-    text-align: center;
     border-radius: 5px;
     border: transparent;
     padding: 12px;
@@ -83,13 +82,18 @@ body {
     height: 400px;
     width: 100%;
 }
-.card-title,.card-text{
-    position: relative;
+.card-title{
+    position: absolute;
     top: 50px;
     left: 50px;
+    padding: 20px;
 }
 .card-text{
     font-size: 25px;
+    position: absolute;
+    top: 120px;
+    left: 60px;
+    padding: 20px;
 }
 .intro{
     display: flex;
@@ -615,19 +619,28 @@ footer{
   }
   .sidebar a{
     position: relative;
-    bottom: 20px;
-    right: 40px;
+    bottom: 65px;
+    left: 60px;
   }
   .logo img{
         height: 30px;
         position: relative;
+        bottom: 10px;
     }
   .login-btn{
-    width: 50px;
-    margin-top: 10px;
-    margin-right: 42px;
+    width: 70px;
+    padding: 1px;
+    border-radius: 20px;
+    bottom: 59px;
+    margin-right: 40px;
     position: relative;
     border: transparent;
+  }
+  .card-title,.card-text{
+    font-size:large;
+    position: relative;
+    top: 20px;
+    left: 20px;
   }
   .login-btn{float:inline-end;}
   .sidebar a {float:inline-start;}
