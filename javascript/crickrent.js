@@ -13,3 +13,6 @@ function gotokookabatpage(){
 function gotossbat(){
     window.location.href = "http://127.0.0.1:5500/html/buyingssbat.html"
 }
+function gotomrfbatpage(){
+    window.location.href = "http://127.0.0.1:5500/html/buyingmrf.html"
+}
