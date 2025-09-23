@@ -10,8 +10,8 @@ function gototenbat(){
     window.location.href = "http://127.0.0.1:5500/html/buyingtenbat.html"
 }
 
-function gotopumafoot(){
-    window.location.href = "http://127.0.0.1:5500/html/buyingpumafoot.html"
+function gotonikefoot(){
+    window.location.href = "http://127.0.0.1:5500/html/buyingnikefoot.html"
 }
 
 function gotovolley(){
