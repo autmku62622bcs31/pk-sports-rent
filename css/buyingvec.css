@@ -97,6 +97,10 @@ body {
     width: 350px;
     margin-left: 100px;
     margin-top: 70px;
+    background-color: rgb(152, 151, 151);
+    padding: 40px;
+    border-radius: 25px;
+    /* mix-blend-mode: multiply; */
     
     /* position: absolute;
     top: 300px;
