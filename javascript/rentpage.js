@@ -4,7 +4,7 @@ function gotomrfbatpage(){
 }
 
 function gotovectorkitpage(){
-    window.location.href = "http://127.0.0.1:5500/html/buyingvec.html"
+    window.location.href = "http://127.0.0.1:5500/html/buyingvecfoot.html"
 }
 function gototenbat(){
     window.location.href = "http://127.0.0.1:5500/html/buyingtenbat.html"
