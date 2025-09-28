@@ -94,9 +94,12 @@ body {
 }
 .pro-img img{
     height: 380px;
-    width: 300px;
-    margin-left: 100px;
-    margin-top: 80px;
+    width: 350px;
+    margin-left: 70px;
+    margin-top: 70px;
+    background-color: rgb(152, 151, 151);
+    padding: 40px;
+    border-radius: 25px;
 }
     /* position: absolute;
     top: 300px;
