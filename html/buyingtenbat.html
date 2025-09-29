@@ -29,9 +29,9 @@
         <div class="pro-img"><img class="pro-image" src="../img/tennis/tennis-removebg-preview.png" alt="">
     </div>
     <div class="buying-btn">
-    <input class="str-btn" id="change" onclick="changeme()" type="date" required autofocus></input><br><br>
-    <input class="end-btn" id="change" onclick="changeme()" type="date"></input><br><br>
-    <input class="tot-btn" id="change" onclick="changeme()" placeholder="Total days"></input><br>
+    <input class="str-btn" id="date1" type="date" required autofocus></input><br><br>
+    <input class="end-btn" id="date2" type="date"></input><br><br>
+    <input class="tot-btn" id="result" placeholder="Total days"></input><br>
     <button class="book-btn">Book Now</button>
     </div>
     </div>
@@ -39,20 +39,23 @@
 </div>
 </body>
 <script> 
-function changeme() {
-        // document.getElementById("change").style.backgroundColor = "blue";
-          const change = document.getElementById('change');
+    function getDifferenceInDays(d1, d2) {
+      if (!d1 || !d2) return "";
+      const diffTime = Math.abs(new Date(d2) - new Date(d1));
+      const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
+      return diffDays;
+    }
 
-  // Add event listener for when the input gains focus
-  change.addEventListener('focus', function() {
-    change.style.backgroundColor = 'grey';
-    change.style.borderColor = 'blue';
-  });
+    const date1 = document.getElementById("date1");
+    const date2 = document.getElementById("date2");
+    const result = document.getElementById("result");
 
-  // Add event listener for when the input loses focus
-  change.addEventListener('blur', function() {
-    change.style.backgroundColor = 'transparent';
-    change.style.borderColor = '#ccc';
-  });
-        } </script>
+    function updateDifference() {
+      const days = getDifferenceInDays(date1.value, date2.value);
+      result.value = days; 
+    }
+    date1.addEventListener("input", updateDifference);
+    date2.addEventListener("input", updateDifference);
+        
+  </script>
 </html>

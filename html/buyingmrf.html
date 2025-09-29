@@ -58,25 +58,23 @@
 </html>
 
 <script>
-        function getDifferenceInDays(d1, d2) {
+    function getDifferenceInDays(d1, d2) {
       if (!d1 || !d2) return "";
       const diffTime = Math.abs(new Date(d2) - new Date(d1));
       const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
       return diffDays;
     }
 
-    // elements
     const date1 = document.getElementById("date1");
     const date2 = document.getElementById("date2");
     const result = document.getElementById("result");
 
-    // update function
     function updateDifference() {
       const days = getDifferenceInDays(date1.value, date2.value);
-      result.value = days; // set value in third input
+      result.value = days; 
     }
 
-    // attach events
+
     date1.addEventListener("input", updateDifference);
     date2.addEventListener("input", updateDifference);
 </script>
