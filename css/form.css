@@ -81,6 +81,7 @@ label{
 .state-box,.pin-box{
     height: 50px;
     background-color: grey;
+    border: transparent;
     border-radius: 5px;
     width: 189px;
     margin-left: 10px;
@@ -116,10 +117,10 @@ input{
 .book-btn{
     border: transparent;
     font-size: 20px;
-    border-radius: 25px;
+    border-radius: 10px;
     padding: 10px 20px;
     width: 200px;
-    margin-left: 150px;
+    margin-left: 169px;
     margin-top: 20px;
     background-color: grey;
     color: white;

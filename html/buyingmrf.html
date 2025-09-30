@@ -12,8 +12,8 @@
 <!-- Sidebar -->
 <div class="sidebar">
     <p class="logo"><img src="../img/PKlogo.PNG" alt=""></p>
-    <a href="#home">Home</a>
-    <a href="#rents">Rents</a>
+    <a href="http://127.0.0.1:5500/html/pk.html">Home</a>
+    <a href="http://127.0.0.1:5500/html/rentpage.html">Rents</a>
 
     <!-- Login button -->
     <button href="#login" class="login-btn">Login</button>
@@ -45,10 +45,10 @@
         <div class="pro-img"><img class="pro-image" src="../img/cricket/mrfbat-removebg-preview.png" alt="">
     </div>
     <div class="buying-btn">
-    <input class="str-btn" id="date1"  type="date" required autofocus></input><br><br>
+    <input class="str-btn" id="date1" type="date" required autofocus></input><br><br>
     <input class="end-btn" id="date2"  type="date"></input><br><br>
     <input class="tot-btn" id="result"  placeholder="Total days"></input><br>
-    <button class="book-btn">Book Now</button>
+    <button class="book-btn" onclick="gotoformpage()">Book Now</button>
     </div>
     </div>
 </div>
@@ -57,7 +57,7 @@
 </body>
 </html>
 
-<script>
+<script src="../javascript/buying.js">
     function getDifferenceInDays(d1, d2) {
       if (!d1 || !d2) return "";
       const diffTime = Math.abs(new Date(d2) - new Date(d1));

@@ -150,7 +150,7 @@ body {
 }
 .sports1:hover{
  transform: scale(1.03);
- border-radius: 200px 25px 25px 200px;
+ border-radius: 25px;
 }
 .sports2:hover{
  transform: scale(1.03);
@@ -162,7 +162,7 @@ body {
 }
 .sports4:hover{
  transform: scale(1.03);
- border-radius: 25px 200px 200px 25px;
+ border-radius: 25px;
 }
 .sports2{
     height: 500px;
