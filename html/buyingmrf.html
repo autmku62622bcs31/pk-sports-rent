@@ -38,43 +38,95 @@
 <div class="main-content">
 <div class="buying-page">
     <div class="buying-img">
-    <h4 class="buying-text">MRF Genius Cricket bat 2 - On Rent <br>
-    From Rs. 349.00 / day</h4>
+    <h4 class="buying-text">MRF Genius Cricket bat 2 - On Rent From Rs. <p id="paragraphValue">349 / day</h4>
 </div>  
     <div class="buy">
         <div class="pro-img"><img class="pro-image" src="../img/cricket/mrfbat-removebg-preview.png" alt="">
     </div>
     <div class="buying-btn">
     <input class="str-btn" id="date1" type="date" required autofocus></input><br><br>
-    <input class="end-btn" id="date2"  type="date"></input><br><br>
-    <input class="tot-btn" id="result"  placeholder="Total days"></input><br>
+    <input class="end-btn" id="date2"  type="date" required></input><br><br>
+    <input class="tot-btn" id="result"  placeholder="Total days" required></input><br>
     <button class="book-btn" onclick="gotoformpage()">Book Now</button>
     </div>
     </div>
 </div>
-
+<div id="popup" class="popup">
+  <p>Please select both <b>start</b> and <b>end</b> dates before booking.</p>
 </div>
-</body>
-</html>
 
-<script src="../javascript/buying.js">
-    function getDifferenceInDays(d1, d2) {
-      if (!d1 || !d2) return "";
-      const diffTime = Math.abs(new Date(d2) - new Date(d1));
-      const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
-      return diffDays;
+<style>
+  .popup {
+    display: none;
+    position: fixed;
+    bottom: 450px;
+    left: 76.2%;
+    transform: translateX(-50%);
+    background: white;
+    color: black;
+    padding: 14px 25px;
+    border-radius: 12px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    animation: fadeInOut 2s ease forwards;
+  }
+
+  @keyframes fadeInOut {
+    0% {opacity: 0; transform: translate(-50%, 20px);}
+    10% {opacity: 1; transform: translate(-50%, 0);}
+    90% {opacity: 1;}
+    100% {opacity: 0; transform: translate(-50%, 20px);}
+  }
+</style>
+
+<script>
+  // 🧮 Function to calculate the difference in days
+  function getDifferenceInDays(d1, d2) {
+    if (!d1 || !d2) return "";
+    const diffTime = Math.abs(new Date(d2) - new Date(d1));
+    const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
+    return diffDays;
+  }
+
+  const date1 = document.getElementById("date1");
+  const date2 = document.getElementById("date2");
+  const result = document.getElementById("result");
+  const popup = document.getElementById("popup");
+
+  // 🔁 Update total days automatically when user changes dates
+  function updateDifference() {
+    const days = getDifferenceInDays(date1.value, date2.value);
+    result.value = days;
+  }
+
+  date1.addEventListener("input", updateDifference);
+  date2.addEventListener("input", updateDifference);
+
+  // 🚀 Main booking function
+  function gotoformpage() {
+    if (date1.value === "" || date2.value === "") {
+      showPopup();
+    } else {
+      const resultValue = parseFloat(document.getElementById('result').value);
+      const paragraphValue = parseFloat(document.getElementById('paragraphValue').innerText);
+      const totalAmount = resultValue * paragraphValue;
+
+      // 💾 Store total value for next page
+      localStorage.setItem('resultvalue', totalAmount);
+
+      // Redirect to form page
+      window.location.href = "http://127.0.0.1:5500/html/form.html";
     }
+  }
 
-    const date1 = document.getElementById("date1");
-    const date2 = document.getElementById("date2");
-    const result = document.getElementById("result");
+  // 💬 Show modern popup for missing inputs
+  function showPopup() {
+    popup.style.display = "block";
+    setTimeout(() => {
+      popup.style.display = "none";
+    }, 2000);
+  }
 
-    function updateDifference() {
-      const days = getDifferenceInDays(date1.value, date2.value);
-      result.value = days; 
-    }
-
-
-    date1.addEventListener("input", updateDifference);
-    date2.addEventListener("input", updateDifference);
 </script>
+</html>

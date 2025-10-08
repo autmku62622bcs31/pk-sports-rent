@@ -1,61 +1,30 @@
+
+
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PK sports</title>
-    <link rel="stylesheet" href="../css/sport.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <title>Input Validation and Navigation</title>
 </head>
 <body>
-    <div class="pk">
-    <div class="d-flex flex-column flex-shrink-0 p-3 text-white bg-dark" style="width: 280px;height: 731px; position: fixed;">
-    <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
-      <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
-      <img class="logo" src="../img/PKlogo.PNG" alt="">
-    </a>
-    <ul class="nav nav-pills flex-column mb-auto">
-      <li>
-        <a href="#" class="nav-link text-white">
-          <svg class="bi me-2" width="16" height="16"><use xlink:href="#speedometer2"></use></svg>
-          Home
-        </a>
-      </li>
-      <li>
-        <a href="#" class="nav-link text-white">
-          <svg class="bi me-2" width="16" height="16"><use xlink:href="#table"></use></svg>
-          Rents
-        </a>
-      </li>
-    </ul>
-    
-    <div>
-        <button class="login">Login</button>
-    </div>
-  </div>
-  </div>
-</body>
-<div class="content"><form class="box">
-    <input type="search">
-</form>
-<img class="intro-img" src="../img/introimg1.jpg" alt="">
 
-<div class="card mb-3" >
-  <div class="row g-0">
-    <div class="col">
-      <img class="nike-img" src="../img/nike.jpg" class="img-fluid rounded-start" alt="...">
-    </div>
-    <div class="col">
-      <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-        <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
-      </div>
-    </div>
-  </div>
-</div>
-<div class="rent">
-    <h1>Rent by sport</h1>
-</div>
-<h1>Iloveyou</h1>
+    <input type="text" id="input1" placeholder="Enter value 1">
+    <input type="text" id="input2" placeholder="Enter value 2">
+    <button id="nextPageButton">Go to Next Page</button>
+
+    <script>
+        document.getElementById('nextPageButton').addEventListener('click', function() {
+            const input1 = document.getElementById('input1').value;
+            const input2 = document.getElementById('input2').value;
+
+            if (input1.trim() !== '' && input2.trim() !== '') {
+                // Both input boxes are filled, navigate to the next page
+                window.location.href = 'next_page.html'; // Replace with your next page URL
+            } else {
+                // Display an alert or message if inputs are not filled
+                alert('Please fill both input boxes before proceeding.');
+            }
+        });
+    </script>
+
+</body>
 </html>

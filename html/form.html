@@ -32,10 +32,21 @@
         <input class="pin-box" type="text" placeholder="PIN code">
         </div>
         <div class="total">
-        <h3 class="tol-head">Total Rs:<p id="amount">349.0</p></h3>
+        <h3 class="tol-head">Total Rs:<p id="displayResult"></p></h3>
         <button class="book-btn">Book Now</button>
     </div>
     </form>
 </div>
 </body>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const result = localStorage.getItem('resultvalue');
+
+        if (result !== null) {
+                document.getElementById('displayResult').innerText = result;
+            } else {
+                document.getElementById('displayResult').innerText = "No result found.";
+            }
+    })
+</script>
 </html>
