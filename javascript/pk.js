@@ -11,3 +11,6 @@ function gototennispage(){
 function gotovolleypage(){
     window.location.href = "http://127.0.0.1:5500/html/volrent.html"
 }
+function gotologinpage(){
+    window.location.href = "http://127.0.0.1:5500/html/login.html"
+}
